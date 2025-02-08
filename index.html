@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mo's Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/78c4af062f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <video autoplay loop muted class="background-clip">
+            <source src="wallpapers/Apocalyptic.mp4" type="video/mp4">
+        </video>
+        <div class = "modal" id = "settingsPopup">
+            <div class = "modal-content">
+                <div class = "modal-options">
+                    div class = "dropdown"
+                </div>
+                <div class = "modal-button-container">
+                    <button style="background-color: grey;" id = "closeSettings" class ="pomodoro">Close</button>
+                    <button id = "saveSettings" class ="pomodoro">Save Changes</button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p id="timer">25:00</p>
+            <div class="button-container">
+                <button id="ptb" class="pomodoro">pomodoro</button>
+                <button id="shortBreak" class="pomodoro">short break</button>
+                <button id="longBreak" class="pomodoro">long break</button>
+            </div>
+            <div class="settings-container">
+            <button id="playPause" class="pomodoro">start</button>
+            <button id="restart" class="pomodoro"><i class="fa-solid fa-rotate-right"></i></button>
+            <button id="settings" class="pomodoro"><i class="fa-solid fa-gear"></i></button>
+            </button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
