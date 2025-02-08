@@ -47,7 +47,7 @@ longBreak.addEventListener('click', () => {
     updateDisplay();
 });
 
-// Pomodoro button functionality d
+// Pomodoro button functionality dd
 pomo.addEventListener('click', () => {
     playPause.innerHTML = 'start';
     clearInterval(timeStatus);
