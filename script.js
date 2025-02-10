@@ -1,4 +1,4 @@
-let startingMinutes = .2;
+let startingMinutes = 25;
 let time = startingMinutes * 60;
 const countdownEl = document.getElementById('timer');
 playPause = document.getElementById('playPause');
@@ -9,9 +9,12 @@ restart = document.getElementById('restart');
 var alarm1 = new Audio('alarm1.mp3');
 const settings = document.getElementById('settings');
 const settingsPopup = document.getElementById('settingsPopup');
+const closeSettings = document.getElementById('closeSettings');
 
 
 let timeStatus; // This will store the interval ID
+
+
 
 // Settings button functionality
 settings.addEventListener('click', () => {
@@ -55,6 +58,9 @@ pomo.addEventListener('click', () => {
     startingMinutes = 25;
     time = startingMinutes * 60;
     updateDisplay();
+});
+closeSettings.addEventListener('click', () => {
+    settingsPopup.style.display = 'none';
 });
 
 // Play/Pause button functionality
